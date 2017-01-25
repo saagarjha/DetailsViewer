@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1000</string>
+	<string>1010</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Saagar Jha. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
@@ -26,6 +26,8 @@
 	<array>
 		<string># Mail 10.2 (3254); macOS 10.12.2 Beta (16C41b)</string>
 		<string>1CD3B36A-0E3B-4A26-8F7E-5BDF96AAC97E</string>
+		<string># Mail 10.3 (3263); macOS 10.12.4 Beta (16E144f)</string>
+		<string>21560BD9-A3CC-482E-9B99-95B7BF61EDC1</string>
 	</array>
 </dict>
 </plist>
