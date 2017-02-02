@@ -11,8 +11,7 @@
 
 #import <AppKit/AppKit.h>
 
-@interface HeaderViewController : NSViewController {
-}
+@interface HeaderViewController : NSViewController
 @property(readonly, nonatomic) NSButton *detailsLink;
 @property(nonatomic) BOOL expandRecipients;
 @end

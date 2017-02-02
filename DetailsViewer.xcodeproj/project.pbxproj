@@ -26,6 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49DF9EAA1E42BD4700E0596D /* TableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewManager.h; sourceTree = "<group>"; };
+		49DF9EAB1E42BD7B00E0596D /* MCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMessage.h; sourceTree = "<group>"; };
+		49DF9EAC1E42BEE400E0596D /* RichMessageCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichMessageCellView.h; sourceTree = "<group>"; };
+		49DF9EAD1E42C30A00E0596D /* MFMessageThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFMessageThread.h; sourceTree = "<group>"; };
+		49DF9EAE1E42C4B600E0596D /* ThreadDisclosureTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadDisclosureTextField.h; sourceTree = "<group>"; };
+		49DF9EAF1E42CA5800E0596D /* RichMessageCellBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichMessageCellBase.h; sourceTree = "<group>"; };
+		49DF9EB01E42FE7D00E0596D /* MFMailbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFMailbox.h; sourceTree = "<group>"; };
+		49DF9EB11E43024C00E0596D /* _ToCCIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _ToCCIndicator.h; sourceTree = "<group>"; };
 		49EA63D11DD4E0080036994A /* DetailsViewer.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetailsViewer.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EA63D41DD4E0080036994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EA63DA1DD4E0400036994A /* MailBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailBundle.h; sourceTree = "<group>"; };
@@ -51,9 +59,17 @@
 		49DF9ED51E4423D400E0596D /* Mail Headers */ = {
 			isa = PBXGroup;
 			children = (
+				49DF9EB11E43024C00E0596D /* _ToCCIndicator.h */,
 				49EA63E01DD4E0EC0036994A /* MVMailBundle.h */,
 				49EA63E11DD4E0FB0036994A /* MessageViewController.h */,
 				49EA63E21DD4E10F0036994A /* HeaderViewController.h */,
+				49DF9EAB1E42BD7B00E0596D /* MCMessage.h */,
+				49DF9EB01E42FE7D00E0596D /* MFMailbox.h */,
+				49DF9EAD1E42C30A00E0596D /* MFMessageThread.h */,
+				49DF9EAF1E42CA5800E0596D /* RichMessageCellBase.h */,
+				49DF9EAC1E42BEE400E0596D /* RichMessageCellView.h */,
+				49DF9EAA1E42BD4700E0596D /* TableViewManager.h */,
+				49DF9EAE1E42C4B600E0596D /* ThreadDisclosureTextField.h */,
 			);
 			name = "Mail Headers";
 			sourceTree = "<group>";

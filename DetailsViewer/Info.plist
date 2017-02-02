@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1010</string>
+	<string>1100</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Saagar Jha. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
