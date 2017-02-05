@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49EA63DC1DD4E06D0036994A /* MailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA63DB1DD4E06D0036994A /* MailBundle.m */; };
-		49EA63DF1DD4E0A90036994A /* Swizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA63DE1DD4E0A90036994A /* Swizzler.m */; };
+		494800011E46DEF80076AAFB /* MCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494800001E46DEF80076AAFB /* MCMessage.swift */; };
+		494800031E46DF1C0076AAFB /* MFMailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494800021E46DF1C0076AAFB /* MFMailbox.swift */; };
+		4948FFEC1E46A3FC0076AAFB /* DetailsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */; };
+		4948FFF11E46DE100076AAFB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFF01E46DE100076AAFB /* MessageViewController.swift */; };
+		4948FFF31E46DE360076AAFB /* RichMessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFF21E46DE360076AAFB /* RichMessageCellView.swift */; };
+		4948FFF51E46DE4E0076AAFB /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFF41E46DE4E0076AAFB /* TableViewManager.swift */; };
+		4948FFF71E46DE660076AAFB /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFF61E46DE660076AAFB /* HeaderViewController.swift */; };
+		4948FFF91E46DE810076AAFB /* ThreadDisclosureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFF81E46DE810076AAFB /* ThreadDisclosureTextField.swift */; };
+		4948FFFB1E46DEB40076AAFB /* _ToCcIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */; };
+		4948FFFF1E46DED20076AAFB /* MFMessageThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */; };
 		49EA63E41DD4E2580036994A /* DetailsViewer.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49EA63D11DD4E0080036994A /* DetailsViewer.mailbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -26,23 +34,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		49DF9EAA1E42BD4700E0596D /* TableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewManager.h; sourceTree = "<group>"; };
-		49DF9EAB1E42BD7B00E0596D /* MCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMessage.h; sourceTree = "<group>"; };
-		49DF9EAC1E42BEE400E0596D /* RichMessageCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichMessageCellView.h; sourceTree = "<group>"; };
-		49DF9EAD1E42C30A00E0596D /* MFMessageThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFMessageThread.h; sourceTree = "<group>"; };
-		49DF9EAE1E42C4B600E0596D /* ThreadDisclosureTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadDisclosureTextField.h; sourceTree = "<group>"; };
-		49DF9EAF1E42CA5800E0596D /* RichMessageCellBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichMessageCellBase.h; sourceTree = "<group>"; };
-		49DF9EB01E42FE7D00E0596D /* MFMailbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFMailbox.h; sourceTree = "<group>"; };
-		49DF9EB11E43024C00E0596D /* _ToCCIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _ToCCIndicator.h; sourceTree = "<group>"; };
+		494800001E46DEF80076AAFB /* MCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMessage.swift; sourceTree = "<group>"; };
+		494800021E46DF1C0076AAFB /* MFMailbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMailbox.swift; sourceTree = "<group>"; };
+		4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewer.swift; sourceTree = "<group>"; };
+		4948FFF01E46DE100076AAFB /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		4948FFF21E46DE360076AAFB /* RichMessageCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RichMessageCellView.swift; sourceTree = "<group>"; };
+		4948FFF41E46DE4E0076AAFB /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
+		4948FFF61E46DE660076AAFB /* HeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		4948FFF81E46DE810076AAFB /* ThreadDisclosureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadDisclosureTextField.swift; sourceTree = "<group>"; };
+		4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ToCcIndicator.swift; sourceTree = "<group>"; };
+		4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMessageThread.swift; sourceTree = "<group>"; };
 		49EA63D11DD4E0080036994A /* DetailsViewer.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetailsViewer.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EA63D41DD4E0080036994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49EA63DA1DD4E0400036994A /* MailBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailBundle.h; sourceTree = "<group>"; };
-		49EA63DB1DD4E06D0036994A /* MailBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailBundle.m; sourceTree = "<group>"; };
-		49EA63DD1DD4E08F0036994A /* Swizzler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swizzler.h; sourceTree = "<group>"; };
-		49EA63DE1DD4E0A90036994A /* Swizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swizzler.m; sourceTree = "<group>"; };
-		49EA63E01DD4E0EC0036994A /* MVMailBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVMailBundle.h; sourceTree = "<group>"; };
-		49EA63E11DD4E0FB0036994A /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
-		49EA63E21DD4E10F0036994A /* HeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,22 +59,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49DF9ED51E4423D400E0596D /* Mail Headers */ = {
+		4948FFEF1E46DDE50076AAFB /* Mail Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				49DF9EB11E43024C00E0596D /* _ToCCIndicator.h */,
-				49EA63E01DD4E0EC0036994A /* MVMailBundle.h */,
-				49EA63E11DD4E0FB0036994A /* MessageViewController.h */,
-				49EA63E21DD4E10F0036994A /* HeaderViewController.h */,
-				49DF9EAB1E42BD7B00E0596D /* MCMessage.h */,
-				49DF9EB01E42FE7D00E0596D /* MFMailbox.h */,
-				49DF9EAD1E42C30A00E0596D /* MFMessageThread.h */,
-				49DF9EAF1E42CA5800E0596D /* RichMessageCellBase.h */,
-				49DF9EAC1E42BEE400E0596D /* RichMessageCellView.h */,
-				49DF9EAA1E42BD4700E0596D /* TableViewManager.h */,
-				49DF9EAE1E42C4B600E0596D /* ThreadDisclosureTextField.h */,
+				4948FFF01E46DE100076AAFB /* MessageViewController.swift */,
+				4948FFF21E46DE360076AAFB /* RichMessageCellView.swift */,
+				4948FFF41E46DE4E0076AAFB /* TableViewManager.swift */,
+				4948FFF61E46DE660076AAFB /* HeaderViewController.swift */,
+				4948FFF81E46DE810076AAFB /* ThreadDisclosureTextField.swift */,
+				4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */,
+				4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */,
+				494800001E46DEF80076AAFB /* MCMessage.swift */,
+				494800021E46DF1C0076AAFB /* MFMailbox.swift */,
 			);
-			name = "Mail Headers";
+			name = "Mail Stubs";
 			sourceTree = "<group>";
 		};
 		49EA63C81DD4E0080036994A = {
@@ -94,11 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				49EA63D41DD4E0080036994A /* Info.plist */,
-				49EA63DA1DD4E0400036994A /* MailBundle.h */,
-				49EA63DB1DD4E06D0036994A /* MailBundle.m */,
-				49EA63DD1DD4E08F0036994A /* Swizzler.h */,
-				49EA63DE1DD4E0A90036994A /* Swizzler.m */,
-				49DF9ED51E4423D400E0596D /* Mail Headers */,
+				4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */,
+				4948FFEF1E46DDE50076AAFB /* Mail Stubs */,
 			);
 			path = DetailsViewer;
 			sourceTree = "<group>";
@@ -130,12 +128,13 @@
 		49EA63C91DD4E0080036994A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Saagar Jha";
 				TargetAttributes = {
 					49EA63D01DD4E0080036994A = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 3493UDPWAK;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -172,8 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EA63DF1DD4E0A90036994A /* Swizzler.m in Sources */,
-				49EA63DC1DD4E06D0036994A /* MailBundle.m in Sources */,
+				4948FFF11E46DE100076AAFB /* MessageViewController.swift in Sources */,
+				4948FFFB1E46DEB40076AAFB /* _ToCcIndicator.swift in Sources */,
+				494800011E46DEF80076AAFB /* MCMessage.swift in Sources */,
+				4948FFF31E46DE360076AAFB /* RichMessageCellView.swift in Sources */,
+				4948FFFF1E46DED20076AAFB /* MFMessageThread.swift in Sources */,
+				494800031E46DF1C0076AAFB /* MFMailbox.swift in Sources */,
+				4948FFF71E46DE660076AAFB /* HeaderViewController.swift in Sources */,
+				4948FFEC1E46A3FC0076AAFB /* DetailsViewer.swift in Sources */,
+				4948FFF91E46DE810076AAFB /* ThreadDisclosureTextField.swift in Sources */,
+				4948FFF51E46DE4E0076AAFB /* TableViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,20 +271,26 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		49EA63D81DD4E0080036994A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3493UDPWAK;
 				INFOPLIST_FILE = DetailsViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DetailsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = mailbundle;
 			};
 			name = Debug;
@@ -285,14 +298,18 @@
 		49EA63D91DD4E0080036994A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3493UDPWAK;
 				INFOPLIST_FILE = DetailsViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DetailsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = mailbundle;
 			};
 			name = Release;
