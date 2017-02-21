@@ -11,47 +11,30 @@ import Foundation
 @objc(DetailsViewer)
 class DetailsViewer: NSObject {
 	private static let swizzle: () = {
-		var m: Method
-		var m1: Method
-		var m2: Method
-		
 		let messageViewController: AnyClass? = NSClassFromString("MessageViewController")
-		let dv_loaded = #selector(DetailsViewer.dv_loaded)
 		let loaded = #selector(getter: MessageViewController.loaded)
-		m = class_getInstanceMethod(DetailsViewer.self, dv_loaded)
-		class_addMethod(messageViewController, dv_loaded, method_getImplementation(m), method_getTypeEncoding(m))
-		m1 = class_getInstanceMethod(messageViewController, loaded)
-		m2 = class_getInstanceMethod(messageViewController, dv_loaded)
-		method_exchangeImplementations(m1, m2)
-		
+		let dv_loaded = #selector(DetailsViewer.dv_loaded)
+		SwizzlingUtilities.swizzle(selector: loaded, forInstancesOf: messageViewController, with: dv_loaded, from: DetailsViewer.self)
+
 		let tableViewManager: AnyClass? = NSClassFromString("TableViewManager")
-		let dv__prepareCell_withMessage = #selector(DetailsViewer.dv_prepare(cell: withMessage:))
 		let _prepare_withMessage = #selector(TableViewManager._prepareCell(_: withMessage:))
-		m = class_getInstanceMethod(DetailsViewer.self, dv__prepareCell_withMessage)
-		class_addMethod(tableViewManager, dv__prepareCell_withMessage, method_getImplementation(m), method_getTypeEncoding(m))
-		m1 = class_getInstanceMethod(tableViewManager, _prepare_withMessage)
-		m2 = class_getInstanceMethod(tableViewManager, dv__prepareCell_withMessage)
-		method_exchangeImplementations(m1, m2)
+		let dv__prepareCell_withMessage = #selector(DetailsViewer.dv_prepare(cell: withMessage:))
+		SwizzlingUtilities.swizzle(selector: _prepare_withMessage, forInstancesOf: tableViewManager, with: dv__prepareCell_withMessage, from: DetailsViewer.self)
 	}()
 
 	override class func initialize() {
 		_ = swizzle
 	}
-
+	
 	dynamic func dv_loaded() -> Bool {
 		let loaded = dv_loaded()
-		guard loaded,
-			self.className == "MessageViewController" else {
+		guard loaded else {
 			return loaded
 		}
-		var mutableSelf = self
-		withUnsafePointer(to: &mutableSelf) { selfPointer in
-			selfPointer.withMemoryRebound(to: MessageViewController.self, capacity: 1) { mvcPointer in
-				let messageViewController = mvcPointer.pointee
-				let headerViewController = messageViewController.headerViewController
-				if !headerViewController.expandRecipients {
-					headerViewController.detailsLink.performClick(self)
-				}
+		SwizzlingUtilities.rebind(self, to: MessageViewController.self) { messageViewController in
+			let headerViewController = messageViewController.headerViewController
+			if !headerViewController.expandRecipients {
+				headerViewController.detailsLink.performClick(self)
 			}
 		}
 		return loaded
@@ -66,26 +49,19 @@ class DetailsViewer: NSObject {
 
 	dynamic func dv_prepare(cell: RichMessageCellView, withMessage message: MFMessageThread) {
 		dv_prepare(cell: cell, withMessage: message)
-		guard cell.className == "RichMessageCellView" else {
-			return
-		}
-		var mutableCell = cell
-		withUnsafePointer(to: &mutableCell) { cellPointer in
-			cellPointer.withMemoryRebound(to: RichMessageCellView.self, capacity: 1) { rmcvPointer in
-				let richMessageCellView = rmcvPointer.pointee
-				richMessageCellView.subjectView.toolTip = message.subject
-				richMessageCellView.senderView.toolTip = message.sender
-				richMessageCellView.mailboxView.toolTip = message.mailbox.extendedDisplayName
-				var toCc = ""
-				if message.to.isEmpty {
-					toCc += "To: \(message.to.joined(separator: ", "))\n"
-				}
-				if message.cc.isEmpty {
-					toCc += "From: \(message.cc.joined(separator: ", "))"
-				}
-				richMessageCellView.dateView.toolTip = "Sent: \(DetailsViewer.dateFormatter.string(from: message.newestMessage.dateSent))"
-				richMessageCellView.threadDisclosureControl.toolTip = "\(message.formattedUnreadMessageCount ?? "No") unread"
+		SwizzlingUtilities.rebind(cell, to: RichMessageCellView.self) { richMessageCellView in
+			richMessageCellView.subjectView.toolTip = message.subject
+			richMessageCellView.senderView.toolTip = message.sender
+			richMessageCellView.mailboxView.toolTip = message.mailbox.extendedDisplayName
+			var toCc = ""
+			if message.to.isEmpty {
+				toCc += "To: \(message.to.joined(separator: ", "))\n"
 			}
+			if message.cc.isEmpty {
+				toCc += "From: \(message.cc.joined(separator: ", "))"
+			}
+			richMessageCellView.dateView.toolTip = "Sent: \(DetailsViewer.dateFormatter.string(from: message.newestMessage.dateSent))"
+			richMessageCellView.threadDisclosureControl.toolTip = "\(message.formattedUnreadMessageCount ?? "No") unread"
 		}
 	}
 }

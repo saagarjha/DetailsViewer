@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490148101E5CFF48006DD609 /* SwizzlingUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901480F1E5CFF48006DD609 /* SwizzlingUtilities.swift */; };
 		494800011E46DEF80076AAFB /* MCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494800001E46DEF80076AAFB /* MCMessage.swift */; };
 		494800031E46DF1C0076AAFB /* MFMailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494800021E46DF1C0076AAFB /* MFMailbox.swift */; };
 		4948FFEC1E46A3FC0076AAFB /* DetailsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4901480F1E5CFF48006DD609 /* SwizzlingUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzlingUtilities.swift; sourceTree = "<group>"; };
 		494800001E46DEF80076AAFB /* MCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMessage.swift; sourceTree = "<group>"; };
 		494800021E46DF1C0076AAFB /* MFMailbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMailbox.swift; sourceTree = "<group>"; };
 		4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewer.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				49EA63D41DD4E0080036994A /* Info.plist */,
 				4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */,
+				4901480F1E5CFF48006DD609 /* SwizzlingUtilities.swift */,
 				4948FFEF1E46DDE50076AAFB /* Mail Stubs */,
 			);
 			path = DetailsViewer;
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490148101E5CFF48006DD609 /* SwizzlingUtilities.swift in Sources */,
 				4948FFF11E46DE100076AAFB /* MessageViewController.swift in Sources */,
 				4948FFFB1E46DEB40076AAFB /* _ToCcIndicator.swift in Sources */,
 				494800011E46DEF80076AAFB /* MCMessage.swift in Sources */,
