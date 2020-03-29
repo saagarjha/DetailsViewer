@@ -10,5 +10,5 @@ import Foundation
 
 @objc
 protocol TableViewManager {
-	func _prepareCell(_ cell: RichMessageCellView, withMessage message: MFMessageThread)
+	func _prepareCell(_ cell: RichMessageCellView, withMessage message: MFMessageThread?)
 }

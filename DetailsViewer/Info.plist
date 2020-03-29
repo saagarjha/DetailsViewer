@@ -15,19 +15,17 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>2100</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Saagar Jha. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>DetailsViewer</string>
-	<key>Supported10.12PluginCompatibilityUUIDs</key>
+	<key>Supported10.15PluginCompatibilityUUIDs</key>
 	<array>
-		<string># Mail 10.2 (3254); macOS 10.12.2 Beta (16C41b)</string>
-		<string>1CD3B36A-0E3B-4A26-8F7E-5BDF96AAC97E</string>
-		<string># Mail 10.3 (3263); macOS 10.12.4 Beta (16E144f)</string>
-		<string>21560BD9-A3CC-482E-9B99-95B7BF61EDC1</string>
+		<string># Mail 13.4 (3608.80.23.2.2), macOS Catalina 10.15.4 (19E266)</string>
+		<string>6EEA38FB-1A0B-469B-BB35-4C2E0EEA9053</string>
 	</array>
 </dict>
 </plist>

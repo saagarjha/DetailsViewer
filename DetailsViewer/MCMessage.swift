@@ -14,6 +14,6 @@ protocol MCMessage {
 	var to: [String] { get set }
 	var sender: String { get set }
 	var dateSent: Date { get set }
-	var subject: String { get set }
+	var subject: ECSubject { get set }
 	var mailbox: MFMailbox { get set }
 }

@@ -11,5 +11,5 @@ import Foundation
 @objc
 protocol MFMessageThread: MCMessage {
 	var newestMessage: MCMessage { get set }
-	var formattedUnreadMessageCount: String! { get set }
+	var formattedUnreadMessageCount: String? { get set }
 }

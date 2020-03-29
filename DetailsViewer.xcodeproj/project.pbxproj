@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		490148101E5CFF48006DD609 /* SwizzlingUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901480F1E5CFF48006DD609 /* SwizzlingUtilities.swift */; };
 		494800011E46DEF80076AAFB /* MCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494800001E46DEF80076AAFB /* MCMessage.swift */; };
 		494800031E46DF1C0076AAFB /* MFMailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494800021E46DF1C0076AAFB /* MFMailbox.swift */; };
 		4948FFEC1E46A3FC0076AAFB /* DetailsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */; };
@@ -18,24 +17,12 @@
 		4948FFF91E46DE810076AAFB /* ThreadDisclosureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFF81E46DE810076AAFB /* ThreadDisclosureTextField.swift */; };
 		4948FFFB1E46DEB40076AAFB /* _ToCcIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */; };
 		4948FFFF1E46DED20076AAFB /* MFMessageThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */; };
-		49EA63E41DD4E2580036994A /* DetailsViewer.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49EA63D11DD4E0080036994A /* DetailsViewer.mailbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		496A3845243136F200FE4715 /* MailBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A3844243136F200FE4715 /* MailBarContainerView.swift */; };
+		496A38472431397400FE4715 /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A38462431397400FE4715 /* Swizzler.swift */; };
+		496A384924313C3800FE4715 /* ECSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A384824313C3800FE4715 /* ECSubject.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		49EA63E31DD4E2440036994A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "~/Library/Mail/Bundles";
-			dstSubfolderSpec = 0;
-			files = (
-				49EA63E41DD4E2580036994A /* DetailsViewer.mailbundle in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		4901480F1E5CFF48006DD609 /* SwizzlingUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzlingUtilities.swift; sourceTree = "<group>"; };
 		494800001E46DEF80076AAFB /* MCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMessage.swift; sourceTree = "<group>"; };
 		494800021E46DF1C0076AAFB /* MFMailbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMailbox.swift; sourceTree = "<group>"; };
 		4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewer.swift; sourceTree = "<group>"; };
@@ -46,6 +33,9 @@
 		4948FFF81E46DE810076AAFB /* ThreadDisclosureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadDisclosureTextField.swift; sourceTree = "<group>"; };
 		4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ToCcIndicator.swift; sourceTree = "<group>"; };
 		4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMessageThread.swift; sourceTree = "<group>"; };
+		496A3844243136F200FE4715 /* MailBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailBarContainerView.swift; sourceTree = "<group>"; };
+		496A38462431397400FE4715 /* Swizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
+		496A384824313C3800FE4715 /* ECSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECSubject.swift; sourceTree = "<group>"; };
 		49EA63D11DD4E0080036994A /* DetailsViewer.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetailsViewer.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EA63D41DD4E0080036994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,15 +54,17 @@
 		4948FFEF1E46DDE50076AAFB /* Mail Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */,
+				496A384824313C3800FE4715 /* ECSubject.swift */,
+				4948FFF61E46DE660076AAFB /* HeaderViewController.swift */,
+				496A3844243136F200FE4715 /* MailBarContainerView.swift */,
+				494800001E46DEF80076AAFB /* MCMessage.swift */,
 				4948FFF01E46DE100076AAFB /* MessageViewController.swift */,
+				494800021E46DF1C0076AAFB /* MFMailbox.swift */,
+				4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */,
 				4948FFF21E46DE360076AAFB /* RichMessageCellView.swift */,
 				4948FFF41E46DE4E0076AAFB /* TableViewManager.swift */,
-				4948FFF61E46DE660076AAFB /* HeaderViewController.swift */,
 				4948FFF81E46DE810076AAFB /* ThreadDisclosureTextField.swift */,
-				4948FFFA1E46DEB40076AAFB /* _ToCcIndicator.swift */,
-				4948FFFE1E46DED20076AAFB /* MFMessageThread.swift */,
-				494800001E46DEF80076AAFB /* MCMessage.swift */,
-				494800021E46DF1C0076AAFB /* MFMailbox.swift */,
 			);
 			name = "Mail Stubs";
 			sourceTree = "<group>";
@@ -98,7 +90,7 @@
 			children = (
 				49EA63D41DD4E0080036994A /* Info.plist */,
 				4948FFEB1E46A3FC0076AAFB /* DetailsViewer.swift */,
-				4901480F1E5CFF48006DD609 /* SwizzlingUtilities.swift */,
+				496A38462431397400FE4715 /* Swizzler.swift */,
 				4948FFEF1E46DDE50076AAFB /* Mail Stubs */,
 			);
 			path = DetailsViewer;
@@ -114,7 +106,6 @@
 				49EA63CD1DD4E0080036994A /* Sources */,
 				49EA63CE1DD4E0080036994A /* Frameworks */,
 				49EA63CF1DD4E0080036994A /* Resources */,
-				49EA63E31DD4E2440036994A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -131,12 +122,12 @@
 		49EA63C91DD4E0080036994A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Saagar Jha";
 				TargetAttributes = {
 					49EA63D01DD4E0080036994A = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 3493UDPWAK;
+						DevelopmentTeam = X4A9GH5NN2;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -147,6 +138,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 49EA63C81DD4E0080036994A;
@@ -174,10 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490148101E5CFF48006DD609 /* SwizzlingUtilities.swift in Sources */,
+				496A384924313C3800FE4715 /* ECSubject.swift in Sources */,
 				4948FFF11E46DE100076AAFB /* MessageViewController.swift in Sources */,
 				4948FFFB1E46DEB40076AAFB /* _ToCcIndicator.swift in Sources */,
 				494800011E46DEF80076AAFB /* MCMessage.swift in Sources */,
+				496A3845243136F200FE4715 /* MailBarContainerView.swift in Sources */,
 				4948FFF31E46DE360076AAFB /* RichMessageCellView.swift in Sources */,
 				4948FFFF1E46DED20076AAFB /* MFMessageThread.swift in Sources */,
 				494800031E46DF1C0076AAFB /* MFMailbox.swift in Sources */,
@@ -185,6 +178,7 @@
 				4948FFEC1E46A3FC0076AAFB /* DetailsViewer.swift in Sources */,
 				4948FFF91E46DE810076AAFB /* ThreadDisclosureTextField.swift in Sources */,
 				4948FFF51E46DE4E0076AAFB /* TableViewManager.swift in Sources */,
+				496A38472431397400FE4715 /* Swizzler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +189,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -242,20 +245,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -282,19 +294,25 @@
 		49EA63D81DD4E0080036994A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3493UDPWAK;
+				CURRENT_PROJECT_VERSION = 3000;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
 				INFOPLIST_FILE = DetailsViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 3.0;
+				OTHER_LDFLAGS = (
+					"-init",
+					_initialize_details_viewer,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DetailsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = mailbundle;
 			};
 			name = Debug;
@@ -302,18 +320,24 @@
 		49EA63D91DD4E0080036994A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3493UDPWAK;
+				CURRENT_PROJECT_VERSION = 3000;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
 				INFOPLIST_FILE = DetailsViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 3.0;
+				OTHER_LDFLAGS = (
+					"-init",
+					_initialize_details_viewer,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DetailsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = mailbundle;
 			};
 			name = Release;
